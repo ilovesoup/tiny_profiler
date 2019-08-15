@@ -79,8 +79,7 @@ private:
 class Profiler {
 public:
   Profiler(const char * modName) {
-    auto pData = ProfilerManagerBase::initProfilerData(modName);
-    this->pData = pData;
+    this->pData = ProfilerManagerBase::initProfilerData(modName);
     start = std::chrono::high_resolution_clock::now();
   }
 
